@@ -1,0 +1,130 @@
+html,body,.container {
+    height:100%;
+}
+
+@font-face{
+    font-family:'digital-clock-font';
+    src: url('fonts/digital-7.ttf');
+}
+
+.container {
+    display:table;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.row {
+    height: 100%;
+    display: table-row;
+}
+
+.row .no-float {
+    display: table-cell;
+    float: none;
+}
+
+.view {
+    background: url('../img/floor.jpg') no-repeat center center fixed;
+}
+
+.door {
+    height: 100%;
+    background: url('../img/metal_door.jpg') ;
+    -webkit-box-shadow: inset 0px 14px 71px -2px rgba(0,0,0,0.59);
+    -moz-box-shadow: inset 0px 14px 71px -2px rgba(0,0,0,0.59);
+    box-shadow: inset 0px 14px 71px -2px rgba(0,0,0,0.59);
+    transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    -webkit-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+    -ms-transition: all ease 0.3;
+}
+
+.door-left {
+    border-left: 5px #101010 solid;
+    border-right: 2.5px #101010 solid;
+}
+
+.door-right {
+    border-left: 2.5px #101010 solid;
+    border-right: 5px #101010 solid;
+}
+
+.wall {
+    height:100%;
+    background: url('../img/wall.jpg');
+    z-index: 1000;
+}
+
+.floor {
+    margin-top:20px;
+    height:100px;
+    width:150px;
+    background: #000;
+}
+
+.floor-lvl {
+    font-family:'digital-clock-font';
+    color: red;
+    font-size: 60px;
+    margin-left:5px;
+    text-transform: uppercase;
+}
+
+.arrow-up {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 25px solid #f00;
+    margin:15px;
+}
+
+.arrow-down {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 25px solid #f00;
+    margin:15px;
+}
+
+#floorSelect {
+    margin-top: 50px;
+    text-align: center;
+    position: absolute;
+    background: #0C0C0C;
+    width: 100%;
+    left: 10%;
+    box-shadow: 0 0 5px #362E2B;
+}
+
+#floorSelect ul {
+    list-style: none;
+}
+
+#floorSelect ul li {
+    width: 28px;
+    float: left;
+    text-align: center;
+    height: 28px;
+    line-height: 28px;
+    border: 1px solid #AAA;
+    margin:8px;
+    transition: all 300ms;
+    border-radius: 50%;
+    border: 2px solid #DDD;
+    color: #fff;
+}
+
+#floorSelect ul li:hover, .active {
+    background:#8AD6DC;
+    color:#FFF;
+    cursor:pointer;
+    transition:all 300ms;
+}
+
+#floorSelect h5 {
+    margin:20px 0 10px;
+    color: #8AD6DC;
+}

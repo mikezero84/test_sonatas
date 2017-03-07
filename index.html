@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Test</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+<div class="container">
+    <div class="row view">
+        <div class="col-md-2 wall">
+            <div class="row">
+                <!--<div class="location">
+                    <h4>Set Location:</h4>
+                    <select id="location">
+                        <option value="1">Elevator standing in first floor</option>
+                        <option value="6">6th floor go down to ground</option>
+                        <option value="5">5th floor go up to 7th floor</option>
+                        <option value="3">3rd floor go down to ground</option>
+                        <option value="GR">Ground go up to 7th floor</option>
+                    </select>
+                </div>-->
+            </div>
+        </div>
+        <div class="col-md-4 door door-left"></div>
+        <div class="col-md-4 door door-right"></div>
+        <div class="col-md-2 wall">
+            <div class="row">
+                <div class="col-md-10">
+                    <div class="floor">
+                        <span data-floor="1" class="floor-lvl">1F</span>
+                        <span id="direction" class="pull-right"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-10">
+                    <div id="floorSelect">
+                        <h5>Select your floor</h5>
+                        <ul class="floorsMenu">
+                            <li class="floorBtn" data-floor="-1">&#10094;&#10095;</li>
+                            <li class="floorBtn" data-floor="0">GR</li>
+                            <li class="floorBtn" data-floor="1">1</li>
+                            <li class="floorBtn" data-floor="2">2</li>
+                            <li class="floorBtn" data-floor="3">3</li>
+                            <li class="floorBtn" data-floor="4">4</li>
+                            <li class="floorBtn" data-floor="5">5</li>
+                            <li class="floorBtn" data-floor="6">6</li>
+                            <li class="floorBtn" data-floor="7">7</li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/scripts.js"></script>
+
+</body>
+
+</html>
